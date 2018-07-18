@@ -8,6 +8,22 @@ import 'imagenet/image_from_network.dart';
 import 'list/inflate_list.dart';
 import 'imagelocal/image_local.dart';
 import 'localjson/local_json.dart';
+import 'navigation/navigation_drawer.dart';
+import 'material/material.dart';
+import 'stateful/stateful_widget.dart';
+import 'stateless/stateless_widget.dart';
+import 'tip/tip.dart';
+import 'dialog/dialog.dart';
+import 'tabs/tabs.dart';
+import 'customfonts/custom_fonts.dart';
+import 'edittext/edittext.dart';
+import 'gradient/gradient.dart';
+import 'httpget/http_get.dart';
+import 'listview/list_view.dart';
+import 'snackbar/snackbar.dart';
+import 'stepper/stepper.dart';
+import 'tabs2/tabs2.dart';
+import 'theme/theme.dart';
 
 String clickText;
 
@@ -133,36 +149,52 @@ class _SampleAppPageState extends State<SampleAppPage> {
             Navigator.push(context,new MaterialPageRoute(builder: (context) => new LocalJson()));
             break;
           case '8':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new Navigation()));
             break;
           case '9':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new Material_App()));
             break;
           case '10':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new StateButton()));
             break;
           case '11':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new Stateless_Widget()));
             break;
           case '12':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new TipCalculator()));
             break;
           case '13':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new MyDialog()));
             break;
           case '14':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new MyTabs()));
             break;
           case '15':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new CustomFonts()));
             break;
           case '16':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new MyEditText()));
             break;
           case '17':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new MyGradient()));
             break;
           case '18':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new MyGetHttpData()));
             break;
           case '19':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new MylistView()));
             break;
           case '20':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new MySnackBar()));
             break;
           case '21':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new MyStepper()));
             break;
           case '22':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new MyTabs2()));
             break;
           case '23':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new MyTheme()));
             break;
         }
       },
