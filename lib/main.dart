@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 import 'index/contactlist/model/contact.dart';
-import './second_page.dart';
+import 'package:flutter_simple_app/route/second_page.dart';
 import 'dropdown/dropdown.dart';
+import 'helloworld/hello_world.dart';
+import 'gridview/gridview.dart';
+import 'imagenet/image_from_network.dart';
+import 'list/inflate_list.dart';
+import 'imagelocal/image_local.dart';
+import 'localjson/local_json.dart';
 
 String clickText;
 
@@ -103,21 +109,28 @@ class _SampleAppPageState extends State<SampleAppPage> {
         clickText=item.fullName;//获取点击的内容
         switch(item.position){
           case '0':
-            Navigator.push(context,new MaterialPageRoute(builder: (context) => new DropDown()));
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new HelloWorld()));
             break;
           case '1':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new DropDown()));
             break;
           case '2':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new GridViewDemo()));
             break;
           case '3':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new SecondPage(title: clickText)));
             break;
           case '4':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new ImageNetwork()));
             break;
           case '5':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new MyList()));
             break;
           case '6':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new ImageLoacal()));
             break;
           case '7':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new LocalJson()));
             break;
           case '8':
             break;
