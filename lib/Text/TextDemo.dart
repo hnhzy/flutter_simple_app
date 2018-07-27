@@ -64,6 +64,12 @@ class TextDemo extends StatelessWidget {
             letterSpacing: 2.0,
           ),
         ),
+        new Text(
+          'Hello, ! How are you?',
+          textAlign: TextAlign.center,
+          overflow: TextOverflow.ellipsis,
+          style: new TextStyle(fontWeight: FontWeight.bold),
+        )
       ]),
     );
   }

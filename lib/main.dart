@@ -30,6 +30,9 @@ import 'imagenet/networkimage.dart';
 import 'listview/listview2.dart';
 import 'rowandcolumn/RowAndColumn.dart';
 import 'stack/stackwidget.dart';
+import 'wrapwidget/WrapWidget.dart';
+import 'transformwidget/TransformWidget.dart';
+import 'singlechildscrollView/SingleChildScrollView.dart';
 
 String clickText;
 
@@ -102,6 +105,9 @@ class _SampleAppPageState extends State<SampleAppPage> {
     items.add(new ContactModel(fullName: 'ListView2 ', email: '362070860@qq.com',position:'27'));
     items.add(new ContactModel(fullName: 'RowAndColunm ', email: '362070860@qq.com',position:'28'));
     items.add(new ContactModel(fullName: 'StackWidget ', email: '362070860@qq.com',position:'29'));
+    items.add(new ContactModel(fullName: 'WrapWidget ', email: '362070860@qq.com',position:'30'));
+    items.add(new ContactModel(fullName: 'TransformWidget ', email: '362070860@qq.com',position:'31'));
+    items.add(new ContactModel(fullName: 'SingleChildScrollViews ', email: '362070860@qq.com',position:'32'));
   }
 
   @override
@@ -225,6 +231,15 @@ class _SampleAppPageState extends State<SampleAppPage> {
             break;
             case '29':
             Navigator.push(context,new MaterialPageRoute(builder: (context) => new StackWidget()));
+            break;
+            case '30':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new WrapWidget()));
+            break;
+            case '31':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new TransformWidget()));
+            break;
+            case '32':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new SingleChildScrollViews()));
             break;
         }
       },
