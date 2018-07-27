@@ -24,6 +24,12 @@ import 'snackbar/snackbar.dart';
 import 'stepper/stepper.dart';
 import 'tabs2/tabs2.dart';
 import 'theme/theme.dart';
+import 'containerwidget/container_widget.dart';
+import 'package:flutter_simple_app/Text/TextDemo.dart';
+import 'imagenet/networkimage.dart';
+import 'listview/listview2.dart';
+import 'rowandcolumn/RowAndColumn.dart';
+import 'stack/stackwidget.dart';
 
 String clickText;
 
@@ -90,6 +96,12 @@ class _SampleAppPageState extends State<SampleAppPage> {
     items.add(new ContactModel(fullName: 'Stepper', email: '362070860@qq.com',position:'21'));
     items.add(new ContactModel(fullName: 'Tabs', email: '362070860@qq.com',position:'22'));
     items.add(new ContactModel(fullName: 'Theme', email: '362070860@qq.com',position:'23'));
+    items.add(new ContactModel(fullName: 'Container', email: '362070860@qq.com',position:'24'));
+    items.add(new ContactModel(fullName: 'TextDemo ', email: '362070860@qq.com',position:'25'));
+    items.add(new ContactModel(fullName: 'NetWorkImage ', email: '362070860@qq.com',position:'26'));
+    items.add(new ContactModel(fullName: 'ListView2 ', email: '362070860@qq.com',position:'27'));
+    items.add(new ContactModel(fullName: 'RowAndColunm ', email: '362070860@qq.com',position:'28'));
+    items.add(new ContactModel(fullName: 'StackWidget ', email: '362070860@qq.com',position:'29'));
   }
 
   @override
@@ -195,6 +207,24 @@ class _SampleAppPageState extends State<SampleAppPage> {
             break;
           case '23':
             Navigator.push(context,new MaterialPageRoute(builder: (context) => new MyTheme()));
+            break;
+            case '24':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new ContainerWidget()));
+            break;
+          case '25':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new TextDemo()));
+            break;
+            case '26':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new NetWorkImage()));
+            break;
+            case '27':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new ListView2()));
+            break;
+            case '28':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new RowAndColunm()));
+            break;
+            case '29':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new StackWidget()));
             break;
         }
       },

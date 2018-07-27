@@ -1,18 +1,5 @@
 import 'package:flutter/material.dart';
 
-//void main() {
-//  runApp(new MaterialApp(
-//    debugShowCheckedModeBanner: false,
-//    home: new MyHome(),
-//    // Set the theme's primary color, accent color,
-//    theme: new ThemeData(
-//      primarySwatch: Colors.green,
-//      accentColor: Colors.lightGreenAccent,
-//      // Set background color
-//      backgroundColor: Colors.black12,
-//    ),
-//  ));
-//}
 
 class MyTheme extends StatelessWidget {
   @override
