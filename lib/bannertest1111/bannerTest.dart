@@ -3,7 +3,6 @@ import 'package:banner/banner.dart';
 import 'dart:ui';
 
 class BannerTest extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
@@ -19,7 +18,7 @@ class BannerTest extends StatelessWidget {
 
 class BannerT extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => BannerTState();
+  BannerTState createState() => BannerTState();
 }
 
 class BannerTState extends State<BannerT> {
@@ -33,7 +32,14 @@ class BannerTState extends State<BannerT> {
           'data_repo/img/banner3.jpg',
           'data_repo/img/banner4.jpg'
         ],
+        //data 传入list<*>
+        //onBannerClickListener(index,itemData) 点击事件
+        // delayTime 秒 延迟多少秒进入下一页
+        //  scrollTime 毫秒 滑动至下页需要秒数
+        // height 高度
+        // buildShowView(index,itemData) 返回一个用于展示的widget
         buildShowView: (index, data) {
+
           print(data);
           return new Image.asset(
             data,
@@ -44,6 +50,7 @@ class BannerTState extends State<BannerT> {
         onBannerClickListener: (index, data) {
           print(index);
         },
+        height: 200.0,
       ),
     );
   }

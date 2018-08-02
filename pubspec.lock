@@ -29,6 +29,20 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.0.5"
+  banner_view:
+    dependency: "direct main"
+    description:
+      name: banner_view
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.1.2"
+  barcode_scan:
+    dependency: "direct main"
+    description:
+      name: barcode_scan
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.0.4"
   boolean_selector:
     dependency: transitive
     description:
@@ -36,6 +50,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.0.3"
+  cached_network_image:
+    dependency: transitive
+    description:
+      name: cached_network_image
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.4.1+1"
   charcode:
     dependency: transitive
     description:
@@ -97,6 +118,34 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.2.8"
+  flutter_cache_manager:
+    dependency: transitive
+    description:
+      name: flutter_cache_manager
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.1.1"
+  flutter_custom_tabs:
+    dependency: transitive
+    description:
+      name: flutter_custom_tabs
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.1.0"
+  flutter_html_view:
+    dependency: "direct main"
+    description:
+      name: flutter_html_view
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.5.3"
+  flutter_search_bar:
+    dependency: "direct main"
+    description:
+      name: flutter_search_bar
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "2.0.5"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -179,6 +228,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.11.3+1"
+  map_view:
+    dependency: "direct main"
+    description:
+      name: map_view
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.0.14"
   matcher:
     dependency: transitive
     description:
@@ -270,6 +326,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.29.0+1"
+  shared_preferences:
+    dependency: "direct main"
+    description:
+      name: shared_preferences
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.4.2"
   shelf:
     dependency: transitive
     description:
@@ -345,6 +408,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.0.2"
+  synchronized:
+    dependency: transitive
+    description:
+      name: synchronized
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.5.1"
   term_glyph:
     dependency: transitive
     description:
@@ -366,6 +436,20 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.1.5"
+  uri:
+    dependency: transitive
+    description:
+      name: uri
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.11.3"
+  url_launcher:
+    dependency: transitive
+    description:
+      name: url_launcher
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "3.0.3"
   utf:
     dependency: transitive
     description:
@@ -373,6 +457,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.9.0+4"
+  uuid:
+    dependency: transitive
+    description:
+      name: uuid
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.5.3"
   vector_math:
     dependency: transitive
     description:
@@ -380,6 +471,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.0.6"
+  video_player:
+    dependency: transitive
+    description:
+      name: video_player
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.5.4"
   watcher:
     dependency: transitive
     description:
@@ -402,5 +500,5 @@ packages:
     source: hosted
     version: "2.1.13"
 sdks:
-  dart: ">=2.0.0-dev.52.0 <=2.0.0-dev.58.0.flutter-f981f09760"
+  dart: ">=2.0.0-dev.58 <=2.0.0-dev.58.0.flutter-f981f09760"
   flutter: ">=0.3.0 <2.0.0"

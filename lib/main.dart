@@ -33,7 +33,13 @@ import 'wrapwidget/WrapWidget.dart';
 import 'transformwidget/TransformWidget.dart';
 import 'singlechildscrollView/SingleChildScrollView.dart';
 import 'ktoast/ktoast.dart';
-import 'bannertest/banner_test.dart';
+import 'bannertest1111/bannerTest.dart';
+import 'bannertest1111/bannerViewTest.dart';
+import 'flutterhtmlview/flutterHtmlView.dart';
+import 'flutter_search_bar/flutterSearchBar.dart';
+import 'barcode_scan/BarCodeScan.dart';
+import 'map_view_test/MapViewTest.dart';
+import 'shared_pre/SharedPreferences.dart';
 
 String clickText;
 
@@ -110,6 +116,12 @@ class _SampleAppPageState extends State<SampleAppPage> {
     items.add(new ContactModel(fullName: 'TransformWidget ', email: '362070860@qq.com',position:'31'));
     items.add(new ContactModel(fullName: 'SingleChildScrollViews ', email: '362070860@qq.com',position:'32'));
     items.add(new ContactModel(fullName: 'Ktoast ', email: '362070860@qq.com',position:'33'));
+    items.add(new ContactModel(fullName: 'BannerViewTest ', email: '362070860@qq.com',position:'34'));
+    items.add(new ContactModel(fullName: 'FlutterHtmlView ', email: '362070860@qq.com',position:'35'));
+    items.add(new ContactModel(fullName: 'SearchBarDemoApp ', email: '362070860@qq.com',position:'36'));
+    items.add(new ContactModel(fullName: 'BarCodeScan ', email: '362070860@qq.com',position:'37'));
+    items.add(new ContactModel(fullName: 'MapViewTest ', email: '362070860@qq.com',position:'38'));
+    items.add(new ContactModel(fullName: 'SharedPre ', email: '362070860@qq.com',position:'39'));
   }
 
   @override
@@ -246,6 +258,24 @@ class _SampleAppPageState extends State<SampleAppPage> {
             break;
             case '33':
             Navigator.push(context,new MaterialPageRoute(builder: (context) => new Ktoast()));
+            break;
+            case '34':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new BannerViewTest()));
+            break;
+            case '35':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new FlutterHtmlView()));
+            break;
+            case '36':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new SearchBarDemoApp()));
+            break;
+            case '37':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new BarCodeScan()));
+            break;
+            case '38':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new MapViewTest()));
+            break;
+            case '39':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new SharedPre()));
             break;
         }
       },
