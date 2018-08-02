@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'index/contactlist/model/contact.dart';
 import 'package:flutter_simple_app/route/second_page.dart';
 import 'dropdown/dropdown.dart';
-import 'helloworld/hello_world.dart';
 import 'gridview/gridview.dart';
 import 'imagenet/image_from_network.dart';
 import 'list/inflate_list.dart';
@@ -33,6 +32,8 @@ import 'stack/stackwidget.dart';
 import 'wrapwidget/WrapWidget.dart';
 import 'transformwidget/TransformWidget.dart';
 import 'singlechildscrollView/SingleChildScrollView.dart';
+import 'ktoast/ktoast.dart';
+import 'bannertest/banner_test.dart';
 
 String clickText;
 
@@ -75,7 +76,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
   @override
   void initState() {
     super.initState();
-    items.add(new ContactModel(fullName: 'Hello World', email: '362070860@qq.com',position:'0'));
+    items.add(new ContactModel(fullName: 'BannerTest', email: '362070860@qq.com',position:'0'));
     items.add(new ContactModel(fullName: 'Spinner', email: '362070860@qq.com',position:'1'));
     items.add(new ContactModel(fullName: 'GridView Example', email: '362070860@qq.com',position:'2'));
     items.add(new ContactModel(fullName: 'Routes', email: '362070860@qq.com',position:'3'));
@@ -108,6 +109,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
     items.add(new ContactModel(fullName: 'WrapWidget ', email: '362070860@qq.com',position:'30'));
     items.add(new ContactModel(fullName: 'TransformWidget ', email: '362070860@qq.com',position:'31'));
     items.add(new ContactModel(fullName: 'SingleChildScrollViews ', email: '362070860@qq.com',position:'32'));
+    items.add(new ContactModel(fullName: 'Ktoast ', email: '362070860@qq.com',position:'33'));
   }
 
   @override
@@ -143,7 +145,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
         clickText=item.fullName;//获取点击的内容
         switch(item.position){
           case '0':
-            Navigator.push(context,new MaterialPageRoute(builder: (context) => new HelloWorld()));
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new BannerTest()));
             break;
           case '1':
             Navigator.push(context,new MaterialPageRoute(builder: (context) => new DropDown()));
@@ -240,6 +242,9 @@ class _SampleAppPageState extends State<SampleAppPage> {
             break;
             case '32':
             Navigator.push(context,new MaterialPageRoute(builder: (context) => new SingleChildScrollViews()));
+            break;
+            case '33':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new Ktoast()));
             break;
         }
       },

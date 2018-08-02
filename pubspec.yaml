@@ -3,6 +3,8 @@ description: A new Flutter project.
 
 dependencies:
   flutter_advanced_networkimage: any
+  ktoast: ^0.0.2
+  banner: ^0.0.5
   flutter:
     sdk: flutter
 
@@ -67,5 +69,9 @@ flutter:
     - data_repo/img/social/linkedin.png
     - data_repo/img/social/twitter.png
     - data_repo/img/bg1.jpg
+    - data_repo/img/banner1.jpg
+    - data_repo/img/banner2.jpg
+    - data_repo/img/banner3.jpg
+    - data_repo/img/banner4.jpg
 
     - data_repo/starwars_data.json
