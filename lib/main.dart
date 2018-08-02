@@ -132,9 +132,10 @@ class _SampleAppPageState extends State<SampleAppPage> {
   Widget buildListTile(BuildContext context, ContactModel item) {
     return new GestureDetector(
       child:new ListTile(
-      isThreeLine: true,
+      isThreeLine: false,
       //子item的是否为三行
       dense: false,
+      contentPadding: EdgeInsets.all(10.0),
       leading: new CircleAvatar(child: new Text(item.fullName[0]),),//左侧首字母图标显示，不显示则传null
       title: new Text(item.fullName),//子item的标题
       subtitle: new Text(item.email),//子item的内容
