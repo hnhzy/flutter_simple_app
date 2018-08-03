@@ -44,5 +44,15 @@
 
         <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="your_api_key"/>
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.flutter.image_provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/flutter_image_picker_file_paths"/>
+        </provider>
     </application>
 </manifest>

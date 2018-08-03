@@ -11,6 +11,13 @@ dependencies:
   barcode_scan: ^0.0.4
   map_view: ^0.0.14
   shared_preferences: ^0.4.2
+  path_provider: ^0.4.1
+  url_launcher: ^3.0.3
+  image_picker: ^0.4.6
+  sqflite: any
+  firebase_database: ^1.0.3
+  video_player: ^0.5.2
+  connectivity: ^0.3.1
   flutter:
     sdk: flutter
 
@@ -79,5 +86,6 @@ flutter:
     - data_repo/img/banner2.jpg
     - data_repo/img/banner3.jpg
     - data_repo/img/banner4.jpg
+    - data_repo/img/talk_casually.png
 
     - data_repo/starwars_data.json

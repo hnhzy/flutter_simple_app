@@ -40,6 +40,12 @@ import 'flutter_search_bar/flutterSearchBar.dart';
 import 'barcode_scan/BarCodeScan.dart';
 import 'map_view_test/MapViewTest.dart';
 import 'shared_pre/SharedPreferences.dart';
+import 'package:flutter_simple_app/path_provider/path_provider_lib.dart';
+import 'url_launcher_lib/url_launcher_lib.dart';
+import 'image_picker_lib/image_picker_lib.dart';
+import 'sqflite_lib/sqflite_lib.dart';
+import 'video_player_lib/video_player_lib.dart';
+import 'wifi_state_lib/wifi_state_lib.dart';
 
 String clickText;
 
@@ -122,6 +128,12 @@ class _SampleAppPageState extends State<SampleAppPage> {
     items.add(new ContactModel(fullName: 'BarCodeScan ', email: '362070860@qq.com',position:'37'));
     items.add(new ContactModel(fullName: 'MapViewTest ', email: '362070860@qq.com',position:'38'));
     items.add(new ContactModel(fullName: 'SharedPre ', email: '362070860@qq.com',position:'39'));
+    items.add(new ContactModel(fullName: 'PathPoviderLib ', email: '362070860@qq.com',position:'40'));
+    items.add(new ContactModel(fullName: 'UrlLauncherLib ', email: '362070860@qq.com',position:'41'));
+    items.add(new ContactModel(fullName: 'ImagePickerLib ', email: '362070860@qq.com',position:'42'));
+    items.add(new ContactModel(fullName: 'SqfLiteLib ', email: '362070860@qq.com',position:'43'));
+    items.add(new ContactModel(fullName: 'VideoApp ', email: '362070860@qq.com',position:'44'));
+    items.add(new ContactModel(fullName: 'WifiStateLib ', email: '362070860@qq.com',position:'45'));
   }
 
   @override
@@ -276,6 +288,24 @@ class _SampleAppPageState extends State<SampleAppPage> {
             break;
             case '39':
             Navigator.push(context,new MaterialPageRoute(builder: (context) => new SharedPre()));
+            break;
+            case '40':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new PathPoviderLib()));
+            break;
+            case '41':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new UrlLauncherLib()));
+            break;
+            case '42':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new ImagePickerLib()));
+            break;
+            case '43':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new SqfLiteLib()));
+            break;
+            case '44':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new VideoApp()));
+            break;
+            case '45':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new WifiStateLib()));
             break;
         }
       },
