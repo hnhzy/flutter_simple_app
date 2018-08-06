@@ -58,6 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
       connectionStatus = (await _connectivity.checkConnectivity()).toString();
+      print(connectionStatus);
     } on PlatformException catch (e) {
       print(e.toString());
       connectionStatus = 'Failed to get connectivity.';

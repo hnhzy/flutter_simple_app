@@ -18,6 +18,9 @@ dependencies:
   firebase_database: ^1.0.3
   video_player: ^0.5.2
   connectivity: ^0.3.1
+  device_info: ^0.2.1
+  flutter_webview_plugin: ^0.2.0
+  share: ^0.5.2
   flutter:
     sdk: flutter
 

@@ -33,8 +33,8 @@ import 'wrapwidget/WrapWidget.dart';
 import 'transformwidget/TransformWidget.dart';
 import 'singlechildscrollView/SingleChildScrollView.dart';
 import 'ktoast/ktoast.dart';
-import 'bannertest1111/bannerTest.dart';
-import 'bannertest1111/bannerViewTest.dart';
+import 'bannertestxx//banner_111.dart';
+import 'bannertestxx//banner_view_111.dart';
 import 'flutterhtmlview/flutterHtmlView.dart';
 import 'flutter_search_bar/flutterSearchBar.dart';
 import 'barcode_scan/BarCodeScan.dart';
@@ -46,20 +46,19 @@ import 'image_picker_lib/image_picker_lib.dart';
 import 'sqflite_lib/sqflite_lib.dart';
 import 'video_player_lib/video_player_lib.dart';
 import 'wifi_state_lib/wifi_state_lib.dart';
-
-String clickText;
+import 'device_info_lib/device_info_lib.dart';
+import 'flutter_webview_plugin_lib/flutter_webview_plugin111.dart';
+import 'share_lib/share_lib.dart';
+import 'animated_list/animated_list.dart';
+import 'app_bar_bottom/app_bar_bottom.dart';
+import 'basic_app_bar/basic_app_bar.dart';
+import 'custom_a11y_traversal/custom_a11y_traversal.dart';
+import 'expansion_tile_sample/expansion_tile_sample.dart';
+import 'tabbed_app_bar/tabbed_app_bar.dart';
 
 void main(){
-  runApp(
-      new MaterialApp(
-        home: new MyApp(),
-        routes: <String,WidgetBuilder>{'/second_page':(BuildContext context){return new SecondPage(title: clickText,); }//先声明要跳转的新页面,title是要传递的参数,'/second_page'是给这个页面取个名字，后面会用到
-  },));
+  runApp(new MaterialApp(home: new MyApp(),));
 }
-
-//void main() {
-//  runApp(new MyApp());
-//}
 
 class MyApp extends StatelessWidget {
   @override
@@ -134,6 +133,15 @@ class _SampleAppPageState extends State<SampleAppPage> {
     items.add(new ContactModel(fullName: 'SqfLiteLib ', email: '362070860@qq.com',position:'43'));
     items.add(new ContactModel(fullName: 'VideoApp ', email: '362070860@qq.com',position:'44'));
     items.add(new ContactModel(fullName: 'WifiStateLib ', email: '362070860@qq.com',position:'45'));
+    items.add(new ContactModel(fullName: 'DeviceInfoLib ', email: '362070860@qq.com',position:'46'));
+    items.add(new ContactModel(fullName: 'FlutterWebViewPlugin ', email: '362070860@qq.com',position:'47'));
+    items.add(new ContactModel(fullName: 'ShareLib ', email: '362070860@qq.com',position:'48'));
+    items.add(new ContactModel(fullName: 'AnimatedListSample ', email: '362070860@qq.com',position:'49'));
+    items.add(new ContactModel(fullName: 'AppBarBottomSample ', email: '362070860@qq.com',position:'50'));
+    items.add(new ContactModel(fullName: 'BasicAppBarSample ', email: '362070860@qq.com',position:'51'));
+    items.add(new ContactModel(fullName: 'CustomTraversalExample ', email: '362070860@qq.com',position:'52'));
+    items.add(new ContactModel(fullName: 'ExpansionTileSample ', email: '362070860@qq.com',position:'53'));
+    items.add(new ContactModel(fullName: 'TabbedAppBarSample ', email: '362070860@qq.com',position:'54'));
   }
 
   @override
@@ -167,7 +175,6 @@ class _SampleAppPageState extends State<SampleAppPage> {
       ),
       onTap: () {
         print(item.position);
-        clickText=item.fullName;//获取点击的内容
         switch(item.position){
           case '0':
             Navigator.push(context,new MaterialPageRoute(builder: (context) => new BannerTest()));
@@ -179,7 +186,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
             Navigator.push(context,new MaterialPageRoute(builder: (context) => new GridViewDemo()));
             break;
           case '3':
-            Navigator.push(context,new MaterialPageRoute(builder: (context) => new SecondPage(title: clickText)));
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new SecondPage(title: item.fullName)));
             break;
           case '4':
             Navigator.push(context,new MaterialPageRoute(builder: (context) => new ImageNetwork()));
@@ -306,6 +313,33 @@ class _SampleAppPageState extends State<SampleAppPage> {
             break;
             case '45':
             Navigator.push(context,new MaterialPageRoute(builder: (context) => new WifiStateLib()));
+            break;
+            case '46':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new DeviceInfoLib()));
+            break;
+            case '47':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new FlutterWebViewPlugin()));
+            break;
+            case '48':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new ShareLib()));
+            break;
+            case '49':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new AnimatedListSample()));
+            break;
+            case '50':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new AppBarBottomSample()));
+            break;
+            case '51':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new BasicAppBarSample()));
+            break;
+            case '52':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new CustomTraversalExample()));
+            break;
+            case '53':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new ExpansionTileSample()));
+            break;
+            case '54':
+            Navigator.push(context,new MaterialPageRoute(builder: (context) => new TabbedAppBarSample()));
             break;
         }
       },

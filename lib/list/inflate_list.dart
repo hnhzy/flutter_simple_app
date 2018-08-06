@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 
+//https://codelabs.flutter-io.cn/codelabs/first-flutter-app-pt1-cn/index.html#5
 class MyList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: 'Infinite List',
-      theme: new ThemeData(
-          primaryColor: Colors.blue, accentColor: Colors.lightBlue),
+      theme: new ThemeData(primaryColor: Colors.blue, accentColor: Colors.lightBlue),
       home: new RandomWords(),
     );
   }
@@ -19,9 +19,9 @@ class RandomWords extends StatefulWidget {
 }
 
 class RandomWordsState extends State<RandomWords> {
-  final _suggestions = <WordPair>[];
-  final _saved = new Set<WordPair>();
-  final _biggerFont = const TextStyle(fontSize: 18.0);
+  final _suggestions = <WordPair>[];//原本的数组
+  final _saved = new Set<WordPair>();//保存的数组
+  final _biggerFont = const TextStyle(fontSize: 18.0);//字体大小设置
 
   @override
   Widget build(BuildContext context) {
@@ -30,10 +30,10 @@ class RandomWordsState extends State<RandomWords> {
         title: new Text('Infinite List'),
         centerTitle: true,
         actions: <Widget>[
-          new IconButton(icon: new Icon(Icons.list), onPressed: _pushSaved),
+          new IconButton(icon: new Icon(Icons.list), onPressed: _pushSaved),//IconButton 导航跳转至下个界面
         ],
       ),
-      body: _buildSuggestions(),
+      body: _buildSuggestions(),//构建列表
     );
   }
 
@@ -41,8 +41,7 @@ class RandomWordsState extends State<RandomWords> {
     Navigator.of(context).push(
       new MaterialPageRoute(
         builder: (context) {
-          final tiles = _saved.map(
-            (pair) {
+          final tiles = _saved.map((pair) {//tiles
               return new ListTile(
                 title: new Text(
                   pair.asPascalCase,
@@ -51,18 +50,16 @@ class RandomWordsState extends State<RandomWords> {
               );
             },
           );
-          final divided = ListTile
-              .divideTiles(
+          final divided = ListTile.divideTiles(
                 context: context,
-                tiles: tiles,
-              )
-              .toList();
+                tiles: tiles,//tiles
+              ).toList();
 
           return new Scaffold(
             appBar: new AppBar(
               title: new Text('Saved lists'),
             ),
-            body: new ListView(children: divided),
+            body: new ListView(children: divided),//divided
           );
         },
       ),
@@ -93,29 +90,21 @@ class RandomWordsState extends State<RandomWords> {
   }
 
   Widget _buildSuggestions() {
-    return new ListView.builder(
+    return new ListView.builder(//ListView.builder
         padding: const EdgeInsets.all(16.0),
-        // The itemBuilder callback is called once per suggested word pairing,
-        // and places each suggestion into a ListTile row.
-        // For even rows, the function adds a ListTile row for the word pairing.
-        // For odd rows, the function adds a Divider widget to visually
-        // separate the entries. Note that the divider may be difficult
-        // to see on smaller devices.
-        itemBuilder: (context, i) {
-          // Add a one-pixel-high divider widget before each row in theListView.
+        itemBuilder: (context, i) {//itemBuilder
+          // 在每一列之前，添加一个1像素高的分隔线widget
           if (i.isOdd) return new Divider();
-
-          // The syntax "i ~/ 2" divides i by 2 and returns an integer result.
-          // For example: 1, 2, 3, 4, 5 becomes 0, 1, 1, 2, 2.
-          // This calculates the actual number of word pairings in the ListView,
-          // minus the divider widgets.
+          // 语法 "i ~/ 2" 表示i除以2，但返回值是整形（向下取整）
+          // 比如 i 为：1, 2, 3, 4, 5 时，结果为 0, 1, 1, 2, 2，
+          // 这可以计算出 ListView 中减去分隔线后的实际单词对数量
           final index = i ~/ 2;
-          // If you've reached the end of the available word pairings...
+          // 如果是建议列表中最后一个单词对
           if (index >= _suggestions.length) {
-            // ...then generate 10 more and add them to the suggestions list.
+            // ...接着再生成10个单词对，然后添加到建议列表
             _suggestions.addAll(generateWordPairs().take(10));
           }
-          return _buildRow(_suggestions[index]);
+          return _buildRow(_suggestions[index]);//创建列表item
         });
   }
 }
