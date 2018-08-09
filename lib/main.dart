@@ -68,6 +68,10 @@ import 'small_calendar_demo/small_calendar_demo.dart';
 import 'fluttertoast_demo/fluttertoast_demo.dart';
 import 'duration_picker_demo/duration_picker_demo.dart';
 import 'flutter_web_view_demo/flutter_web_view_demo.dart';
+import 'flutter_sticky_header_demo/flutter_sticky_header_demo.dart';
+import 'flutter_stetho_demo/flutter_stetho_demo.dart';
+import 'package:http/http.dart' as http;
+import 'rect_getter_demo/rect_getter_demo.dart';
 
 void main() {
   //4. Fire Events
@@ -173,6 +177,9 @@ class _SampleAppPageState extends State<SampleAppPage> {
     items.add(new ContactModel(fullName: 'FlutterToastDemo  ', email: '362070860@qq.com', position: '65'));
     items.add(new ContactModel(fullName: 'DurationPickerDemo  ', email: '362070860@qq.com', position: '66'));
     items.add(new ContactModel(fullName: 'FlutterWebViewDemo  ', email: '362070860@qq.com', position: '67'));
+    items.add(new ContactModel(fullName: 'FlutterStickyHeaderDemo  ', email: '362070860@qq.com', position: '68'));
+    items.add(new ContactModel(fullName: 'FlutterStethoExample  ', email: '362070860@qq.com', position: '69'));
+    items.add(new ContactModel(fullName: 'RectGetterDemo  ', email: '362070860@qq.com', position: '70'));
   }
 
   @override
@@ -418,6 +425,15 @@ class _SampleAppPageState extends State<SampleAppPage> {
             break;
           case '67':
             Navigator.push(context, new MaterialPageRoute(builder: (context) => new FlutterWebViewDemo()));
+            break;
+          case '68':
+            Navigator.push(context, new MaterialPageRoute(builder: (context) => new FlutterStickyHeaderDemo()));
+            break;
+          case '69':
+//            Navigator.push(context, new MaterialPageRoute(builder: (context) => new FlutterStethoExample(client: new http.Client(),)));
+            break;
+          case '70':
+            Navigator.push(context, new MaterialPageRoute(builder: (context) => new RectGetterDemo()));
             break;
         }
       },

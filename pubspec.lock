@@ -216,6 +216,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.2.2"
+  flutter_sticky_header:
+    dependency: "direct main"
+    description:
+      name: flutter_sticky_header
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.3.2"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -452,6 +459,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.29.0+1"
+  rect_getter:
+    dependency: "direct main"
+    description:
+      name: rect_getter
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.0.1"
   share:
     dependency: "direct main"
     description:
