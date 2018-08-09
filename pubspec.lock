@@ -181,6 +181,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.0.7"
+  flutter_duration_picker:
+    dependency: "direct main"
+    description:
+      name: flutter_duration_picker
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.0.3"
   flutter_html_view:
     dependency: "direct main"
     description:
@@ -221,6 +228,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.0.1"
+  flutter_web_view:
+    dependency: "direct main"
+    description:
+      name: flutter_web_view
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.0.2"
   flutter_webview_plugin:
     dependency: "direct main"
     description:
@@ -228,6 +242,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.2.1+1"
+  fluttertoast:
+    dependency: "direct main"
+    description:
+      name: fluttertoast
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "2.0.7"
   front_end:
     dependency: transitive
     description:
@@ -478,6 +499,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
+  small_calendar:
+    dependency: "direct main"
+    description:
+      name: small_calendar
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.4.0"
   source_map_stack_trace:
     dependency: transitive
     description:

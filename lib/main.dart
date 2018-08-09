@@ -53,7 +53,7 @@ import 'custom_a11y_traversal/custom_a11y_traversal.dart';
 import 'expansion_tile_sample/expansion_tile_sample.dart';
 import 'tabbed_app_bar/tabbed_app_bar.dart';
 import 'staggeredgridview/flutter_staggered_grid_view.dart';
-import 'bv_widget/bv_widget.dart';
+import 'banner_view_demo/banner_view_demo.dart';
 import 'flutterwalkthrough/flutterwalkthrough.dart';
 import 'route/events.dart';
 import 'image_pick_crop/image_pick_crop.dart';
@@ -64,6 +64,10 @@ import 'flutter_slidable_demo/flutter_slidable_demo.dart';
 import 'pulltorefresh_demo/pulltorefresh_demo.dart';
 import 'date_picker_demo/date_picker_demo.dart';
 import 'flutter_downloader_demo/flutter_downloader_demo.dart';
+import 'small_calendar_demo/small_calendar_demo.dart';
+import 'fluttertoast_demo/fluttertoast_demo.dart';
+import 'duration_picker_demo/duration_picker_demo.dart';
+import 'flutter_web_view_demo/flutter_web_view_demo.dart';
 
 void main() {
   //4. Fire Events
@@ -165,6 +169,10 @@ class _SampleAppPageState extends State<SampleAppPage> {
     items.add(new ContactModel(fullName: 'PulltorefreshDemo  ', email: '362070860@qq.com', position: '61'));
     items.add(new ContactModel(fullName: 'DatePickerDemo  ', email: '362070860@qq.com', position: '62'));
     items.add(new ContactModel(fullName: 'DownLoadDemo  ', email: '362070860@qq.com', position: '63'));
+    items.add(new ContactModel(fullName: 'SmallCalendarExample  ', email: '362070860@qq.com', position: '64'));
+    items.add(new ContactModel(fullName: 'FlutterToastDemo  ', email: '362070860@qq.com', position: '65'));
+    items.add(new ContactModel(fullName: 'DurationPickerDemo  ', email: '362070860@qq.com', position: '66'));
+    items.add(new ContactModel(fullName: 'FlutterWebViewDemo  ', email: '362070860@qq.com', position: '67'));
   }
 
   @override
@@ -398,6 +406,18 @@ class _SampleAppPageState extends State<SampleAppPage> {
             break;
           case '63':
             Navigator.push(context, new MaterialPageRoute(builder: (context) => new DownLoadDemo()));
+            break;
+          case '64':
+            Navigator.push(context, new MaterialPageRoute(builder: (context) => new SmallCalendarExample()));
+            break;
+          case '65':
+            Navigator.push(context, new MaterialPageRoute(builder: (context) => new FlutterToastDemo()));
+            break;
+          case '66':
+            Navigator.push(context, new MaterialPageRoute(builder: (context) => new DurationPickerDemo()));
+            break;
+          case '67':
+            Navigator.push(context, new MaterialPageRoute(builder: (context) => new FlutterWebViewDemo()));
             break;
         }
       },
