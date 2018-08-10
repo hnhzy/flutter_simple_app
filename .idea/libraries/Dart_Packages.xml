@@ -142,13 +142,6 @@
             </list>
           </value>
         </entry>
-        <entry key="flutter_advanced_networkimage">
-          <value>
-            <list>
-              <option value="F:/flutter/.pub-cache/hosted/pub.flutter-io.cn/flutter_advanced_networkimage-0.2.8/lib" />
-            </list>
-          </value>
-        </entry>
         <entry key="flutter_cache_manager">
           <value>
             <list>
@@ -513,6 +506,13 @@
             </list>
           </value>
         </entry>
+        <entry key="side_header_list_view">
+          <value>
+            <list>
+              <option value="F:/flutter/.pub-cache/hosted/pub.flutter-io.cn/side_header_list_view-0.0.3/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="sky_engine">
           <value>
             <list>
@@ -689,7 +689,6 @@
       <root url="file://F:/flutter/.pub-cache/hosted/pub.flutter-io.cn/event_bus-1.0.1/lib" />
       <root url="file://F:/flutter/.pub-cache/hosted/pub.flutter-io.cn/firebase_core-0.2.5/lib" />
       <root url="file://F:/flutter/.pub-cache/hosted/pub.flutter-io.cn/firebase_database-1.0.3/lib" />
-      <root url="file://F:/flutter/.pub-cache/hosted/pub.flutter-io.cn/flutter_advanced_networkimage-0.2.8/lib" />
       <root url="file://F:/flutter/.pub-cache/hosted/pub.flutter-io.cn/flutter_cache_manager-0.1.1/lib" />
       <root url="file://F:/flutter/.pub-cache/hosted/pub.flutter-io.cn/flutter_cupertino_date_picker-0.0.4/lib" />
       <root url="file://F:/flutter/.pub-cache/hosted/pub.flutter-io.cn/flutter_cupertino_settings-0.0.8/lib" />
@@ -741,6 +740,7 @@
       <root url="file://F:/flutter/.pub-cache/hosted/pub.flutter-io.cn/shelf_packages_handler-1.0.3/lib" />
       <root url="file://F:/flutter/.pub-cache/hosted/pub.flutter-io.cn/shelf_static-0.2.7/lib" />
       <root url="file://F:/flutter/.pub-cache/hosted/pub.flutter-io.cn/shelf_web_socket-0.2.2/lib" />
+      <root url="file://F:/flutter/.pub-cache/hosted/pub.flutter-io.cn/side_header_list_view-0.0.3/lib" />
       <root url="file://F:/flutter/.pub-cache/hosted/pub.flutter-io.cn/small_calendar-0.4.0/lib" />
       <root url="file://F:/flutter/.pub-cache/hosted/pub.flutter-io.cn/source_map_stack_trace-1.1.4/lib" />
       <root url="file://F:/flutter/.pub-cache/hosted/pub.flutter-io.cn/source_maps-0.10.5/lib" />

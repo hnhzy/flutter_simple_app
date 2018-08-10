@@ -72,6 +72,9 @@ import 'flutter_sticky_header_demo/flutter_sticky_header_demo.dart';
 import 'flutter_stetho_demo/flutter_stetho_demo.dart';
 import 'package:http/http.dart' as http;
 import 'rect_getter_demo/rect_getter_demo.dart';
+import 'side_header_list_view_demo/side_header_list_view_demo.dart';
+import 'Staggered_View_Demo/staggered_view_demo.dart';
+import 'flutter_openbookeffect_demo/flutter_openbookeffect_demo.dart';
 
 void main() {
   //4. Fire Events
@@ -180,6 +183,9 @@ class _SampleAppPageState extends State<SampleAppPage> {
     items.add(new ContactModel(fullName: 'FlutterStickyHeaderDemo  ', email: '362070860@qq.com', position: '68'));
     items.add(new ContactModel(fullName: 'FlutterStethoExample  ', email: '362070860@qq.com', position: '69'));
     items.add(new ContactModel(fullName: 'RectGetterDemo  ', email: '362070860@qq.com', position: '70'));
+    items.add(new ContactModel(fullName: 'SideHeaderListViewDemo  ', email: '362070860@qq.com', position: '71'));
+    items.add(new ContactModel(fullName: 'StaggeredViewDemo  ', email: '362070860@qq.com', position: '72'));
+    items.add(new ContactModel(fullName: 'FlutterOpenbookeffectDemo  ', email: '362070860@qq.com', position: '73'));
   }
 
   @override
@@ -207,7 +213,8 @@ class _SampleAppPageState extends State<SampleAppPage> {
         dense: false,
         contentPadding: EdgeInsets.all(10.0),
         leading: new CircleAvatar(
-          child: new Text(item.fullName[0]),
+//          child: new Text(item.fullName[0]),
+          child: new Text(item.position),
         ),
         //左侧首字母图标显示，不显示则传null
         title: new Text(item.fullName),
@@ -434,6 +441,15 @@ class _SampleAppPageState extends State<SampleAppPage> {
             break;
           case '70':
             Navigator.push(context, new MaterialPageRoute(builder: (context) => new RectGetterDemo()));
+            break;
+          case '71':
+            Navigator.push(context, new MaterialPageRoute(builder: (context) => new SideHeaderListViewDemo()));
+            break;
+          case '72':
+            Navigator.push(context, new MaterialPageRoute(builder: (context) => new StaggeredViewDemo()));
+            break;
+          case '73':
+            Navigator.push(context, new MaterialPageRoute(builder: (context) => new FlutterOpenbookeffectDemo()));
             break;
         }
       },

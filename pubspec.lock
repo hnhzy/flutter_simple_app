@@ -139,13 +139,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_advanced_networkimage:
-    dependency: "direct main"
-    description:
-      name: flutter_advanced_networkimage
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "0.2.8"
   flutter_cache_manager:
     dependency: transitive
     description:
@@ -508,6 +501,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.2.2"
+  side_header_list_view:
+    dependency: "direct main"
+    description:
+      name: side_header_list_view
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.0.3"
   sky_engine:
     dependency: transitive
     description: flutter

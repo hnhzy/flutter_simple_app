@@ -21,7 +21,7 @@ class MyTabs2State extends State<MyTabs2> with SingleTickerProviderStateMixin {
     super.initState();
 
     // Initialize the Tab Controller
-    controller = new TabController(length: 2, vsync: this);
+    controller = new TabController(length: 3, vsync: this);
   }
 
   @override
@@ -34,29 +34,29 @@ class MyTabs2State extends State<MyTabs2> with SingleTickerProviderStateMixin {
   TabBar getTabBar() {
     return new TabBar(
       tabs: <Tab>[
-//        new Tab(
-//          // set icon to the tab
-//          icon: new Icon(Icons.favorite),
-//        ),
         new Tab(
-//          icon: new Icon(Icons.adb),
-//        text: "全部",
-          child: new Column(
-            children: <Widget>[
-              new Text("gdsagdsag"),
-              new Text("gdsagdsag"),
-            ],
-          ),
+//          // set icon to the tab
+          icon: new Icon(Icons.favorite),
         ),
         new Tab(
-//          icon: new Icon(Icons.airport_shuttle),
+          icon: new Icon(Icons.adb),
+//        text: "全部",
+//          child: new Column(
+//            children: <Widget>[
+//              new Text("gdsagdsag"),
+//              new Text("gdsagdsag"),
+//            ],
+//          ),
+        ),
+        new Tab(
+          icon: new Icon(Icons.airport_shuttle),
 //          text: "代理人",
-          child: new Column(
-            children: <Widget>[
-              new Text("gdsagdsag"),
-              new Text("gdsagdsag"),
-            ],
-          ),
+//          child: new Column(
+//            children: <Widget>[
+//              new Text("gdsagdsag"),
+//              new Text("gdsagdsag"),
+//            ],
+//          ),
         ),
       ],
       // setup the controller
