@@ -2,7 +2,7 @@ name: flutter_simple_app
 description: A new Flutter project.
 
 dependencies:
-  quiver: ^2.0.0+1
+#  quiver: ^2.0.0+1
   ktoast: ^0.0.2
   banner_view: ^1.1.2
   flutter_html_view: "^0.5.3"
@@ -36,7 +36,7 @@ dependencies:
   flutter_sticky_header: ^0.3.2
   rect_getter: ^0.0.1
   side_header_list_view: ^0.0.3
-  flutter_advanced_networkimage: ^0.3.4
+#  flutter_advanced_networkimage: ^0.3.4
 #  flutter_stetho: ^0.1.1
 #  flutter_image_pick_crop: ^0.0.1
 #  flutter_multiple_image_picker: ^0.0.1
