@@ -1,8 +1,6 @@
 # flutter_simple_app
 
-A new Flutter project.
+一些简单的Flutter样式实现以及比较好的第三方插件整理
 
 ## Getting Started
 
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
